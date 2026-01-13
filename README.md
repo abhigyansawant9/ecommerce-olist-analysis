@@ -54,3 +54,38 @@ Formula:
 ### Operations Metrics
 
 #### Delivery Time (Days)
+Time taken from order purchase to customer delivery.
+Formula:
+Delivery Date − Purchase Date
+
+#### Delivery Delay (Days)
+
+Difference between actual and estimated delivery.
+Formula:
+Delivery Date − Estimated Delivery Date
+
+#### On-Time Delivery Rate
+
+Percentage of orders delivered on or before the estimated date.
+Formula:
+Orders where Delivered ≤ Estimated / Total Orders
+
+### ⭐ Customer Experience Metrics
+
+#### Average Review Score
+
+Mean rating given by customers.
+Formula:
+AVG(review_score)
+
+#### Low Rating Rate
+
+Percentage of reviews that indicate dissatisfaction.
+Formula:
+Reviews with score ≤ 2 / Total Reviews
+
+#### Repeat Customer Rate
+
+Proportion of customers who placed more than one order.
+Formula:
+Customers with >1 order / Total Customers
