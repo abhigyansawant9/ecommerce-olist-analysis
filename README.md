@@ -89,3 +89,68 @@ Reviews with score ≤ 2 / Total Reviews
 Proportion of customers who placed more than one order.
 Formula:
 Customers with >1 order / Total Customers
+
+## Business Question
+
+Revenue
+
+1) Which months have the highest revenue and orders?
+
+2) Which categories drive revenue vs volume (orders)?
+
+3) Which states/cities contribute most to revenue?
+
+Delivery & Experience
+4) What % of orders are late? What’s the average delay?
+5) Does delay reduce review score? (quantify)
+6) Which sellers/categories are associated with late delivery + low ratings?
+
+Customer
+7) What’s the repeat customer rate?
+8) Do repeat customers have higher AOV / better ratings?
+
+Payments
+9) Which payment types dominate? Do they correlate with AOV or cancellations?
+
+Actionable
+10) Where should the business focus first for impact? (top 3 actions)
+
+## Hypotheses
+
+H1: Late deliveries lead to lower review scores.
+
+H2: Certain regions have systematically higher delays.
+
+H3: Some categories have high demand but poor satisfaction (risk).
+
+H4: Repeat customers have higher AOV than new customers.
+
+## Tables Needed
+
+### Revenue
+
+-order_items (price)
+
+-orders (dates/status)
+
+-products + category_translation (category names)
+
+### Delivery
+
+-orders (purchase, estimated, delivered timestamps)
+
+### Reviews
+
+-order_reviews (review score)
+
+-join with orders via order_id
+
+### Region
+
+-customers (state/city)
+
+-join customers to orders
+
+### Payments
+
+-order_payments (payment type, installments, value)
