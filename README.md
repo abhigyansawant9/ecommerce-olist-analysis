@@ -154,3 +154,15 @@ H4: Repeat customers have higher AOV than new customers.
 ### Payments
 
 -order_payments (payment type, installments, value)
+
+## Deliverables
+
+SQL analysis (joins + KPI queries)
+
+1) Python notebook (EDA + insights + hypothesis testing)
+
+2) Power BI dashboard (interactive story)
+
+3) Final report (markdown + screenshots)
+
+4) README with business context + results + how to reproduce
